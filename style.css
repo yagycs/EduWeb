@@ -36,3 +36,18 @@ nav {
     justify-content: space-between;
     padding: 1vw 8vw;
 }
+
+nav img {
+    width: 150px;
+    cursor: pointer;
+}
+
+nav .navigation ul {
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav .navigation ul li {
+    list-style: none;
+}
