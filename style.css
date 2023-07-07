@@ -43,11 +43,24 @@ nav img {
 }
 
 nav .navigation ul {
-    display:flex;
+    display: flex;
     justify-content: flex-end;
     align-items: center;
 }
 
 nav .navigation ul li {
     list-style: none;
+    margin-left: 30px;
+}
+
+nav .navigation ul li a {
+    text-decoration: none;
+    color: rgb(21, 21, 100);
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+nav .navigation ul li a:hover {
+    color: #FDC93B;
 }
