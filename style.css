@@ -148,7 +148,7 @@ nav .navigation ul li a:hover {
 }
 
 #features .fea-box {
-    padding: 2vw 2vw 2vw 2vw;
+    padding: 4vw 4vw 4vw 4vw;
     background: #F9F9FF;
     text-align: start;
 }
@@ -321,12 +321,10 @@ nav .navigation ul li a:hover {
 }
 
 #experts .expert-box .profile img {
-    width: 70%;
-    height: 57%;
+    width: 100%;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    border-radius: 50%;
 }
 
 .pro-links {
@@ -377,7 +375,8 @@ footer li {
 }
 
 footer li:hover {
-    color: rgba(241, 240, 245);;
+    color: rgba(241, 240, 245);
+    ;
 }
 
 footer p {
