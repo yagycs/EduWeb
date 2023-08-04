@@ -757,6 +757,9 @@ footer .copyright .pro-links i:hover {
 /* contact */
 #contact {
     padding: 8vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 #contact .getin {
@@ -807,6 +810,82 @@ footer .copyright .pro-links i:hover {
 
 #contact .getin .getin-details .pro-links i {
     margin-right: 8px;
+}
+
+#contact .form {
+    width: 60%;
+    background: #f7f6fa;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+#contact .form h4 {
+    font-size: 24px;
+    color: #2c234d;
+    line-height: 30px;
+    margin-bottom: 8px;
+}
+
+#contact .form p {
+    color: #686875;
+    line-height: 24px;
+    padding-bottom: 25px;
+}
+
+#contact .form .form-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#contact .form .form-row input {
+    width: 48%;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 3px;
+    border: none;
+    background: #fff;
+    color: #7e7c87;
+    outline: none;
+    padding: 20px 30px;
+    margin-bottom: 20px;
+}
+
+#contact .form .form-col input,
+#contact .form .form-col textarea {
+    width: 100%;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 3px;
+    border: none;
+    background: #fff;
+    color: #7e7c87;
+    outline: none;
+    padding: 20px 30px;
+    margin-bottom: 20px;
+}
+
+#contact .form button {
+    font-size: .9rem;
+    padding: 13px 25px;
+    background: rgb(21, 21, 100);
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    color: #fff;
+}
+
+#map {
+    width: 100%;
+    height: 70vh;
+    margin-bottom: 8vw;
+}
+
+#map iframe {
+    width: 100%;
+    height: 100%;
 }
 
 @media (max-width: 769px) {
@@ -945,99 +1024,136 @@ footer .copyright .pro-links i:hover {
     #course-inner .enroll {
         margin-top: 25px;
     }
-}
 
-@media (max-width: 475px) {
-    #registration {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+    /* contact */
+    #contact {
+        padding: 8vw 4vw;
     }
 
-    #registration .reminder .time {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        margin-top: 20px;
-        margin-bottom: 20px;
+    #contact .getin {
+        width: 250px;
     }
 
-    /* about */
-    #about-container {
-        flex-direction: column-reverse;
+    @media (max-width: 475px) {
+        #registration {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        #registration .reminder .time {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        /* about */
+        #about-container {
+            flex-direction: column-reverse;
+        }
+
+        #about-container .about-img {
+            width: 100%;
+            padding-right: 0px;
+        }
+
+        #about-container .about-text {
+            width: 100%;
+            padding-bottom: 20px;
+        }
+
+        #trust .trust-img {
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        #trust .trust-img img {
+            width: 60px;
+            margin: 10px 15px;
+            height: auto;
+        }
+
+        /* blog */
+        #blog-container {
+            flex-direction: column;
+        }
+
+        #blog-container .blogs {
+            width: 100%;
+        }
+
+        #blog-container .cate {
+            width: 100%;
+        }
+
+        #blog-container .blogpost {
+            width: 100%;
+            margin-top: 70px;
+        }
+
+        #blog-container .blogpost img {
+            width: 100%;
+            height: 50vh;
+            object-fit: cover;
+        }
+
+        #course-inner .overview .course-head .c-name {
+            width: 50%;
+        }
+
+        #course-inner .overview .course-head .c-name h2 {
+            font-size: 22px;
+        }
+
+        #course-inner .overview .course-head span {
+            font-size: 22px;
+        }
+
+        #course-inner .enroll {
+            width: 100%;
+        }
+
+        /* contact */
+        #contact {
+            padding: 8vw 4vw;
+            flex-direction: column;
+            align-content: flex-start;
+            justify-content: flex-start;
+        }
+
+        #contact .getin {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
+        #contact .form {
+            width: 100%;
+            padding: 40px 30px;
+        }
+
+        #contact .form .form-row {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            width: 100%;
+        }
+
+        #contact .form .form-row input {
+            width: 100%;
+        }
     }
 
-    #about-container .about-img {
-        width: 100%;
-        padding-right: 0px;
+    @media (max-width: 376px) {
+        footer input {
+            width: 100%;
+            margin-bottom: 20px;
+        }
     }
-
-    #about-container .about-text {
-        width: 100%;
-        padding-bottom: 20px;
-    }
-
-    #trust .trust-img {
-        margin-top: 40px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-    }
-
-    #trust .trust-img img {
-        width: 60px;
-        margin: 10px 15px;
-        height: auto;
-    }
-
-    /* blog */
-    #blog-container {
-        flex-direction: column;
-    }
-
-    #blog-container .blogs {
-        width: 100%;
-    }
-
-    #blog-container .cate {
-        width: 100%;
-    }
-
-    #blog-container .blogpost {
-        width: 100%;
-        margin-top: 70px;
-    }
-
-    #blog-container .blogpost img {
-        width: 100%;
-        height: 50vh;
-        object-fit: cover;
-    }
-
-    #course-inner .overview .course-head .c-name {
-        width: 50%;
-    }
-
-    #course-inner .overview .course-head .c-name h2 {
-        font-size: 22px;
-    }
-
-    #course-inner .overview .course-head span {
-        font-size: 22px;
-    }
-
-    #course-inner .enroll {
-        width: 100%;
-    }
-}
-
-@media (max-width: 376px) {
-    footer input {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-}
