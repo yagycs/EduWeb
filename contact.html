@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edu Web | Best Online Courses</title>
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <!-- navigation -->
+    <nav>
+        <img src="images/logo.png" alt="">
+        <div class="navigation">
+            <ul>
+                <i id="menu-close" class="fas fa-times"></i>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="course.html">Courses</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
+            </ul>
+            <img id="menu-btn" src="images/menu.png" alt="">
+        </div>
+    </nav>
+
+    <!-- home -->
+    <section id="about-home">
+        <h2>Contact Us</h2>
+
+    </section>
+
+    <section id="contact">
+        <div class="getin">
+            <h2>Get in touch</h2>
+            <p>Looking for help? Fill the form and start a new adventure.</p>
+            <div class="getin-details">
+                <h3>Headquarters</h3>
+                <div>
+                    <i class="far fa-home get"></i>
+                    <p>Jalan Raya Serpong Ruko BSD,Tangerang Selatan 15322</p>
+                </div>
+                <h3>Phone</h3>
+                <div>
+                    <i class="fas fa-phone-alt get"></i>
+                    <p>
+                        (021) 5378628 <br>
+                        (021) 5378630
+                    </p>
+                </div>
+                <h3>Support</h3>
+                <div>
+                    <i class="fal fa-envelope-open-text get"></i>
+                    <p>
+                        support@eduweb.com <br> 
+                        helpdesk@eduweb.com
+                    </p>
+                </div>
+                <h3>Follow Us</h3>
+                <div class="pro-links">
+                    <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.behance.com/"><i class="fab fa-behance"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="form"></div>
+    </section>
+
+    <footer>
+        <div class="footer-col">
+            <h3>Top Products</h3>
+            <li>Manage Reputation</li>
+            <li>Power Tools</li>
+            <li>Managed Website</li>
+            <li>Marketing Service</li>
+        </div>
+
+        <div class="footer-col">
+            <h3>Quick Links</h3>
+            <li>Jobs</li>
+            <li>Brand Assets</li>
+            <li>Investor Relations</li>
+            <li>Terms of Service</li>
+        </div>
+
+        <div class="footer-col">
+            <h3>Features</h3>
+            <li>Manage Reputation</li>
+            <li>Power Tools</li>
+            <li>Managed Website</li>
+            <li>Marketing Service</li>
+        </div>
+
+        <div class="footer-col">
+            <h3>Resources</h3>
+            <li>Guides</li>
+            <li>Research</li>
+            <li>Experts</li>
+            <li>Marketing Service</li>
+        </div>
+
+        <div class="footer-col">
+            <h3>Newsletter</h3>
+            <p>You can trust us. We only send promo offers,</p>
+            <div class="subscribe">
+                <input type="text" placeholder="Your Email Address">
+                <a href="#" class="yellow">SUBSCRIBE</a>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright ©2023 All rights reserved | This Website is made by Yagy C. Sumule</p>
+            <div class="pro-links">
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        $('#menu-btn').click(function () {
+            $('nav .navigation ul').addClass('active')
+        });
+
+        $('#menu-close').click(function () {
+            $('nav .navigation ul').removeClass('active')
+        });
+    </script>
+
+</body>
+
+</html>
